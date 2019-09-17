@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Civane Norm';
+    src: url('Civane-NorReg.woff2') format('woff2'),
+        url('Civane-NorReg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
