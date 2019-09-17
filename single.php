@@ -3,8 +3,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
-					<?php 
-						while(have_posts()) : the_post(); 
+					<?php
+						while(have_posts()) : the_post();
 					?>
 					<div class="author_area">
 						<p><i class="fa fa-user" aria-hidden="true"></i><a href="#"><?php the_author();?></a></p>
@@ -12,7 +12,6 @@
 					</div>
 					<div class="single_item">
 						<h3><?php the_title();?></h3>
-						<?php the_post_thumbnail();?>
 						<p><?php the_content();?></p>
 					</div>
 					<?php endwhile;?>
