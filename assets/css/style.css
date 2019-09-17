@@ -206,13 +206,13 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         -webkit-transform: translateY(-100%);
                 transform: translateY(-100%);
-    }
+    } 
     100% {
         opacity: 0.9;
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
         -webkit-transform: translateY(0);
                 transform: translateY(0);
-    }
+    } 
 }
 @keyframes slide-down {
     0% {
@@ -220,13 +220,13 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         -webkit-transform: translateY(-100%);
                 transform: translateY(-100%);
-    }
+    } 
     100% {
         opacity: 0.9;
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
         -webkit-transform: translateY(0);
                 transform: translateY(0);
-    }
+    } 
 }
 .arrow_down {
 	width: 67px;
@@ -282,6 +282,13 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
 	width: 97%;
 }
 .culture-content p {
+	font-size: 16px;
+	color: #000000;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 13px;
+}
+.content_culture {
 	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
@@ -378,7 +385,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
   opacity: 0.8;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
-  z-index:99999;
+  z-index:99999; 
 }
 
 .mfp-wrap {
@@ -510,7 +517,7 @@ button::-moz-focus-inner {
   color: white;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace;
+  font-family: Arial, Baskerville, monospace; 
   }
   .mfp-close:hover, .mfp-close:focus {
     opacity: 1;
@@ -726,7 +733,7 @@ img.mfp-img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 	transition: 0.5s;
 	padding: 15px 10px;
 }
@@ -745,6 +752,9 @@ img.mfp-img {
 .blog-area {
 	padding: 100px 0;
 }
+.all-blog-post{
+	padding:40px 0 80px 0;
+}
 .blog-title h2 {
 	font-size: 40px;
 	color: #0066FF;
@@ -756,8 +766,10 @@ img.mfp-img {
 	height: auto;
 }
 .blog-single-item {
-	-webkit-transition:0.5s;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
+	height: 100%;
+	background: #EFF1F4;
 }
 .blog-single-item:hover {
 	margin-top: -16px;
@@ -765,13 +777,28 @@ img.mfp-img {
 	transition: 0.5s;
 }
 .blog-content {
-	background: #EFF1F4;
 	padding: 20px 20px;
 	position: relative;
-	height: 180px;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
+.all_blog{
+	margin-bottom:30px;
+}
+a.read-more {
+	color: #FFF;
+	margin: 0 15px;
+	background: #0066FF;
+	padding: 4px 7px;
+	overflow: hidden;
+	display: inline-block;
+	text-transform: capitalize;
+	border-radius: 3px;
+	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
 .blog-content p {
 	color: #13136D;
 	font-size: 15px;
@@ -791,7 +818,7 @@ img.mfp-img {
 .blog-content a {
 	text-decoration: none;
 }
-.blog-single-item:hover .blog-content {
+.blog-single-item:hover {
 	background: #FFF;
 	box-shadow: 0 0 26px -6px #D2D2D2;
 	-webkit-transition:0.5s;
@@ -818,6 +845,47 @@ img.mfp-img {
 	position: relative;
 	top: -2px;
 	padding-left: 6px;
+}
+.single_page {
+	padding: 120px 0 80px 0;
+}
+.single_item h3 {
+	font-size: 24px;
+	color: #13136D;
+	font-weight: 500;
+	padding-bottom: 30px;
+}
+.author_area {
+	display: flex;
+	padding-bottom: 30px;
+}
+.author_area p {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	margin-right: 20px;
+	color:#000000;
+}
+.author_area a {
+	font-size: 16px;
+	color:#000000;
+}
+.author_area i {
+	padding-right: 6px;
+	font-size: 17px;
+}
+.single_item p {
+	font-size: 16px;
+	color: #000000;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 13px;
+}
+.single_item img {
+	padding-bottom: ;
+	margin-bottom: 20px;
+}
+#map{
+	height:100%;
 }
 /******************************************** end blog area ********************************************************************/
 
@@ -917,7 +985,7 @@ img.mfp-img {
 /*****************************************************************
 							team page
  ****************************************************************/
-
+ 
 /******************************************** start home bar area **********************************/
 .homebar-area {
 	overflow: hidden;
@@ -1098,7 +1166,7 @@ img.mfp-img {
 /*****************************************************************
 							cases page
  ****************************************************************/
-
+ 
 /******************************************** start ai deliver area **************************************/
 .ai-delivered-area {
 	overflow: hidden;
@@ -1183,12 +1251,12 @@ img.mfp-img {
 	font-weight: 500;
 	padding-bottom: 40px;
 }
-.culture-content span {
+.cases-content span {
 	color: #FF8B7C;
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	padding-bottom: 20px;
-	display: block;
+	display:block;
 }
 .cases-content h3 {
 	font-size: 30px;
@@ -1417,7 +1485,7 @@ img.mfp-img {
 	overflow: hidden;
 	font-weight: 700;
 }
-.aicontent-img-area {/*
+.aicontent-img-area {/* 
 	overflow: hidden; */
 	background: #FFEEEB;
 	padding-top: 80px;
@@ -1504,14 +1572,14 @@ img.mfp-img {
 	margin-left:-20px;
 	margin-top:10px;
 }
-/* .tech-single-item h2::after {
+.tech-single-item h2::after {
 	position: absolute;
 	content: "";
 	width: 14px;
 	height: 14px;
 	background: url(../images/whyai/icon/icons22.png) no-repeat 0 0 / 100% 100%;
 	top: -6px;
-} */
+}
 .row.tech-item {
 	margin-top: 40px;
 }
@@ -1770,8 +1838,9 @@ img.mfp-img {
 .check-list{
 	float:left;
 	overflow:hidden;
+	height:80px;
 }
-/* .check-box-area span {
+.check-box-area span {
 	font-size: 15px;
 	color: #000000;
 	font-weight: 400;
@@ -1779,7 +1848,7 @@ img.mfp-img {
 	text-decoration: none;
 	padding-bottom: 3px;
 	margin-top:7px;
-} */
+}
 .check-box-area a {
 	color: #06F;
 	border-bottom: 1px solid #FF8B7C;
@@ -1796,7 +1865,7 @@ img.mfp-img {
 	display: block;
 	padding-top: 10px;
 }
-.check-box-area .wpcf7-checkbox {
+.check-box-area input {
     position:absolute;
     opacity: 0;
     cursor: pointer;
@@ -1822,7 +1891,7 @@ img.mfp-img {
     position: absolute;
     display: none;
 }
-.check-box-area .wpcf7-checkbox:checked ~ .checkmark:after {
+.check-box-area input:checked ~ .checkmark:after {
     display: block;
 }
 .check-box-area .checkmark::after {

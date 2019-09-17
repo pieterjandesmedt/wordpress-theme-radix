@@ -6,10 +6,6 @@ function what_ai($atts,$content){
 	$what_ai = shortcode_atts(array(
 		'data_scroll' => '5',
 		'what_ai_title' => 'What is AI?',
-		'what_ai_desc' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
-		
-		</br>
-		Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
 
 	),$atts); 
 	extract($what_ai);
@@ -26,7 +22,7 @@ function what_ai($atts,$content){
 				<div class="col-xl-7 offset-xl-3">
 					<div class="ai_description">
 						<h2><?php echo $what_ai_title;?></h2>
-						<p><?php echo $what_ai_desc;?></p>
+						<p><?php echo $content;?></p>
 					</div>
 				</div>
 			</div>
@@ -59,7 +55,7 @@ function what_ai($atts,$content){
 			array(
 				'heading'	=> 'What ai description',
 				'type'		=> 'textarea_html',
-				'param_name'=> 'what_ai_desc',
+				'param_name'=> 'content',
 				'value'	=> 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
 				
 				</br>		

@@ -7,7 +7,6 @@ function case_left($atts,$content){
 		'cases_img'   => get_template_directory_uri().'/assets/images/cases/cases.png',
 		'cases_feature_tittle' => 'Customer experience',
 		'cases_content_title' => '30% better search results for the VDAB job seeker',
-		'cases_left_description' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor',
 		'cases_buton' => 'see how we applied AI',
 		'cases_button_url' => '#',
 
@@ -34,7 +33,7 @@ function case_left($atts,$content){
 								<div class="cases-content culture-content">
 									<span><?php echo $cases_feature_tittle;?></span>
 									<h3><?php echo $cases_content_title;?></h3>
-									<p><?php echo $cases_left_description;?></p>
+									<p><?php echo $content;?></p>
 									<a href="<?php echo $cases_button_url;?>"><?php echo $cases_buton;?><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 								</div>
 							</div>
@@ -74,7 +73,7 @@ function case_left($atts,$content){
 			array(
 				'heading'	=> 'Cases Description',
 				'type'		=> 'textarea_html',
-				'param_name'=> 'cases_left_description',
+				'param_name'=> 'content',
 				'value'	=> 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor'
 			),
 			array(

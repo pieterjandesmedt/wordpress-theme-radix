@@ -12,11 +12,6 @@
 			'id'   => 'author_name',
 			'type' => 'text',
 		) );
-		$home_page->add_field( array(
-			'name' => 'Author Name',
-			'id'   => 'banner_title',
-			'type' => 'text',
-		) );
 
 		$industries = new_cmb2_box(array(
 			'title'   => 'Industries Options',

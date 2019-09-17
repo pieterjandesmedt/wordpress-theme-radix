@@ -26,4 +26,6 @@
 	require_once('home.php');
 	require_once('tech.php');
 	require_once('contactform.php');
+	require_once('blog-page-title.php');
+	require_once('all_blog.php');
 ?>

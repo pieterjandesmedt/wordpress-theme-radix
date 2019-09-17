@@ -5,7 +5,6 @@ function banner_function($atts,$content){
 
 	$banner = shortcode_atts(array(
 		'banner_title' => 'Get ahead. Think AI.',
-		'banner_content'	=>'Wherever you are in your AI journey, we can help you get ahead.',
 		'banner_button' => 'get started',
 		'banner_button_url' => '#',
 		'banner_bg'   => get_template_directory_uri().'/images/banner/banner.png',
@@ -28,7 +27,7 @@ function banner_function($atts,$content){
 				<div class="col-xl-12">
 					<div class="banner-content">
 						<h2><?php echo $banner_title?></h2>
-						<p><?php echo $banner_content?></p>
+						<p><?php echo $content?></p>
 						<a href="<?php echo $banner_button_url ?>"><?php echo $banner_button ?></a>
 					</div>
 				</div>
@@ -65,7 +64,7 @@ function banner_function($atts,$content){
 			array(
 				'heading'	=> 'Banner Description',
 				'type'		=> 'textarea_html',
-				'param_name'=> 'banner_content',
+				'param_name'=> 'content',
 				'value'	=> 'Wherever you are in your AI journey, we can help you get ahead.'
 			),
 			array(

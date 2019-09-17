@@ -38,7 +38,9 @@
 									?>
 									<div class="evets-single-item">
 										<div class="events-date">
-											<p><?php echo get_the_date();?></p>
+											<?php $year = get_the_terms(get_the_id(),'year');
+											?>
+											<p><?php echo get_the_date('d.m').'.'.$year[0]->slug;?></p>
 										</div>
 										<div class="events-content">
 											<a href="#"><?php the_title();?></a>
@@ -60,156 +62,47 @@
 										</div>
 										<div class="tabs-item">
 											<ul>
-												<li><a href="#tabs1">2018</a></li>
-												<li><a href="#tabs2">2017</a></li>
-												<li><a href="#tabs3">2016</a></li>
+												
+												<?php 
+												$allFilter = get_terms('year');
+												foreach ($allFilter as $filter_name) :?>
+												  <li  class="filter" data-filter=".<?php echo $filter_name->slug;?>"><a href="#<?php echo $filter_name->slug;?>"><?php echo $filter_name->name;?></a></li>
+												<?php endforeach;?>
 											</ul>
 										</div>
 									</div>
 									
 									<!-- past-events -->
-									<div class="past_events_item events-item" id="tabs1">
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2018</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Ghent</p>
-											</div>
-										</div>
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2017</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Brussels</p>
-											</div>
-										</div>
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2017</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Brussels</p>
-											</div>
-										</div>
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2017</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Brussels</p>
-											</div>
-										</div>
-									</div>
+									<?php 
+									$allFilter = get_terms('year');
+									foreach ($allFilter as $filter_name) :?>
 									
-									<!-- past-events -->
-									<div class="past_events_item events-item" id="tabs2">
+									<div class="past_events_item events-item" id="<?php echo $filter_name->slug ?>">
+										<?php 
+											$events = new WP_Query(array(
+												'post_type'   => 'events',
+												'taxonomy'    => 'year',
+												'term'        => $filter_name->slug,
+												'order'       => ASC,
+											));
+											while($events->have_posts()) : $events->the_post(); 
+										?>
+
 										<div class="evets-single-item">
 											<div class="events-date">
-												<p>19.09.2017</p>
+												<p><?php echo get_the_date('d.m').'.'.$filter_name->slug;?></p>
 											</div>
 											<div class="events-content">
-												<a href="#">This is the name of the event</a>
+												<a href="#"><?php the_title();?></a>
 											</div>
 											<div class="events-name">
-												<p>Ghent</p>
+												<p><?php echo get_post_meta(get_the_ID(),'state_text',true);?></p>
 											</div>
 										</div>
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2017</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Brussels</p>
-											</div>
-										</div>
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2017</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Brussels</p>
-											</div>
-										</div>
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2017</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Brussels</p>
-											</div>
-										</div>
+										<?php endwhile;?>
+										<?php wp_reset_postdata();?>
 									</div>
-									
-									<!-- past-events -->
-									<div class="past_events_item events-item" id="tabs3">
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2016</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Ghent</p>
-											</div>
-										</div>
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2016</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Brussels</p>
-											</div>
-										</div>
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2016</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Brussels</p>
-											</div>
-										</div>
-										<div class="evets-single-item">
-											<div class="events-date">
-												<p>19.09.2016</p>
-											</div>
-											<div class="events-content">
-												<a href="#">This is the name of the event</a>
-											</div>
-											<div class="events-name">
-												<p>Brussels</p>
-											</div>
-										</div>
-									</div>
+									<?php endforeach;?>
 								</div>
 							</div>
 						</div>

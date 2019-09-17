@@ -59,6 +59,16 @@
 			'menu_icon'=> 'dashicons-image-filter',
 			'supports' => array('title'),
 		));
+		register_taxonomy('year','events',array(
+			'labels'   => array(
+				'name'   => 'Year',
+				'add_new'=> 'Add New Year',
+				'add_item_item'=> 'Add New Year',
+				'parent_item' => 'Parent Year',
+			),
+			'public'   => true,
+			'hierarchical' => true,
+		));
 	}
 
 	add_action('widgets_init','radix_widget');
@@ -114,6 +124,7 @@
 		wp_register_script('bootstrap',get_template_directory_uri().'/assets/js/bootstrap.min.js',array(jquery));
 		wp_register_script('popper',get_template_directory_uri().'/assets/js/popper.js',array(jquery));
 		wp_register_script('scrollIt',get_template_directory_uri().'/assets/js/scrollIt.min.js',array(jquery));
+		wp_register_script('map','https://maps.googleapis.com/maps/api/js?key=AIzaSyD6BT-qXMiStdRg2lcwRzW-GK_YfS2NixU&callback=initMap');
 		wp_register_script('jquery-ui',get_template_directory_uri().'/assets/js/jquery-ui.min.js',array(jquery));
 		wp_register_script('magnific-popup',get_template_directory_uri().'/assets/js/jquery.magnific-popup.min.js',array(jquery));
 		wp_register_script('custom',get_template_directory_uri().'/assets/js/custom.js',array(jquery));
@@ -123,6 +134,7 @@
 		wp_enqueue_script('bootstrap');
 		wp_enqueue_script('poppe');
 		wp_enqueue_script('scrollIt');
+		wp_enqueue_script('map');
 		wp_enqueue_script('jquery-ui');
 		wp_enqueue_script('magnific-popup');
 		wp_enqueue_script('custom');

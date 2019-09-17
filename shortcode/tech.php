@@ -1,22 +1,21 @@
-<?php
+<?php 
 // tech Shortocode
 add_shortcode('tech','tech');
 function tech($atts,$content){
 
 	$tech = shortcode_atts(array(
 		'stack_title' => 'Our tech stack',
-		'stack_desc' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
 		'api_text' => 'API stack',
 		'deployment_text' => 'Deployment stack',
 		'artificial_text' => 'Artificial intelligence stack',
 		'prototyping_text' => 'Prototyping stack',
 
-	),$atts);
+	),$atts); 
 	extract($tech);
-
+	
 	ob_start();
-
-?>
+	
+?>	
 	<!--=======================================================================================
 									Start tech area
 	========================================================================================-->
@@ -25,10 +24,10 @@ function tech($atts,$content){
 			<div class="row">
 				<div class="col-xl-7 offset-xl-3">
 					<div class="row">
-						<div class="col-xl-12">
+						<div class="col-xl-8">
 							<div class="tech-title">
 								<h2><?php echo $stack_title;?></h2>
-								<p><?php echo $stack_desc;?></p>
+								<p><?php echo $content;?></p>
 							</div>
 						</div>
 					</div>
@@ -43,23 +42,23 @@ function tech($atts,$content){
 						<div class="col-lg-9">
 							<div class="tech-icons-area">
 								<ul>
-									<?php
+									<?php 
 										$api = new WP_Query(array(
 											'post_type'   => 'tech',
 											'taxonomy'    => 'stack',
 											'term'        => 'API',
 											'order'       => ASC,
 										));
-										while($api->have_posts()) : $api->the_post();
+										while($api->have_posts()) : $api->the_post(); 
 									?>
 									<li><a href="#"><img src="<?php echo get_post_meta(get_the_ID(),'stack_image',true)?>" alt="image"></a></li>
 									<?php endwhile;?>
-									<?php wp_reset_postdata();?>
+									<?php wp_reset_postdata();?>	
 								</ul>
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="row tech-item">
 						<div class="col-lg-3">
 							<div class="tech-single-item">
@@ -69,23 +68,23 @@ function tech($atts,$content){
 						<div class="col-lg-9">
 							<div class="tech-icons-area">
 								<ul>
-									<?php
+									<?php 
 										$api = new WP_Query(array(
 											'post_type'   => 'tech',
 											'taxonomy'    => 'stack',
 											'term'        => 'Deployment',
 											'order'       => ASC,
 										));
-										while($api->have_posts()) : $api->the_post();
+										while($api->have_posts()) : $api->the_post(); 
 									?>
 									<li><a href="#"><img src="<?php echo get_post_meta(get_the_ID(),'stack_image',true)?>" alt="image"></a></li>
 									<?php endwhile;?>
-									<?php wp_reset_postdata();?>
+									<?php wp_reset_postdata();?>		
 								</ul>
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="row tech-item">
 						<div class="col-lg-3">
 							<div class="tech-single-item">
@@ -95,23 +94,23 @@ function tech($atts,$content){
 						<div class="col-lg-9">
 							<div class="tech-icons-area">
 								<ul>
-									<?php
+									<?php 
 										$api = new WP_Query(array(
 											'post_type'   => 'tech',
 											'taxonomy'    => 'stack',
 											'term'        => 'Artificial',
 											'order'       => ASC,
 										));
-										while($api->have_posts()) : $api->the_post();
+										while($api->have_posts()) : $api->the_post(); 
 									?>
 									<li><a href="#"><img src="<?php echo get_post_meta(get_the_ID(),'stack_image',true)?>" alt="image"></a></li>
 									<?php endwhile;?>
-									<?php wp_reset_postdata();?>
+									<?php wp_reset_postdata();?>		
 								</ul>
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="row tech-item">
 						<div class="col-lg-3">
 							<div class="tech-single-item">
@@ -121,18 +120,18 @@ function tech($atts,$content){
 						<div class="col-lg-9">
 							<div class="tech-icons-area">
 								<ul>
-									<?php
+									<?php 
 										$api = new WP_Query(array(
 											'post_type'   => 'tech',
 											'taxonomy'    => 'stack',
 											'term'        => 'Prototyping ',
 											'order'       => ASC,
 										));
-										while($api->have_posts()) : $api->the_post();
+										while($api->have_posts()) : $api->the_post(); 
 									?>
 									<li><a href="#"><img src="<?php echo get_post_meta(get_the_ID(),'stack_image',true)?>" alt="image"></a></li>
 									<?php endwhile;?>
-									<?php wp_reset_postdata();?>
+									<?php wp_reset_postdata();?>	
 								</ul>
 							</div>
 						</div>
@@ -144,7 +143,7 @@ function tech($atts,$content){
 	<!--=======================================================================================
 									End tech area
 	========================================================================================-->
-
+	
 <?php
 	$output = ob_get_clean();
 	return $output;
@@ -164,7 +163,7 @@ function tech($atts,$content){
 				array(
 					'heading'   => 'Tech Description',
 					'type'      => 'textarea_html',
-					'param_name'=> 'stack_desc',
+					'param_name'=> 'content',
 					'value'     => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
 				),
 				array(

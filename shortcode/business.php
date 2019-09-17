@@ -222,7 +222,7 @@ function business_function($atts,$content){
 			),
 			
 			array(
-				'heading'	=> 'Business Icon',
+				'heading'	=> 'Business Icon3',
 				'type'		=> 'attach_image',
 				'param_name'=> 'business_icon3'
 			),
@@ -246,7 +246,7 @@ function business_function($atts,$content){
 			),
 			
 			array(
-				'heading'	=> 'Business Icon',
+				'heading'	=> 'Business Icon4',
 				'type'		=> 'attach_image',
 				'param_name'=> 'business_icon4'
 			),
@@ -270,7 +270,7 @@ function business_function($atts,$content){
 			),
 			
 			array(
-				'heading'	=> 'Business Icon',
+				'heading'	=> 'Business Icon5',
 				'type'		=> 'attach_image',
 				'param_name'=> 'business_icon5'
 			),

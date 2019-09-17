@@ -5,7 +5,6 @@ function about_ai($atts,$content){
 
 	$deep_learning = shortcode_atts(array(
 		'about_learning_title' => 'Now… You thought about AI.',
-		'about_learnign_desc' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, beatae vitae dicta.',
 		'about_img'   => get_template_directory_uri().'/assets/images/whyai/whyai6.png',
 		'about_button' => 'see how we applied AI',
 		'about_button_url' => 'see how we applied AI'
@@ -34,7 +33,7 @@ function about_ai($atts,$content){
 							<div class="col-md-6 culture_item2">
 								<div class="about-ai-content deep-learnign-content culture-content">
 									<h3><?php echo $about_learning_title;?></h3>
-									<p><?php echo $about_learnign_desc;?></p>
+									<p><?php echo $content;?></p>
 									<a href="<?php echo $about_button_url;?>"><?php echo $about_button;?></a>
 								</div>
 							</div>
@@ -71,7 +70,7 @@ function about_ai($atts,$content){
 			array(
 				'heading'	=> 'Description',
 				'type'		=> 'textarea_html',
-				'param_name'=> 'about_learnign_desc',
+				'param_name'=> 'content',
 				'value'	=> 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, beatae vitae dicta.'
 			),
 			array(

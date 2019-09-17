@@ -1,19 +1,18 @@
-<?php
+<?php 
 // team_member Shortocode
 add_shortcode('team_member','team_member');
 function team_member($atts,$content){
 
 	$team_member = shortcode_atts(array(
 		'work_title' => 'Want to work with us?',
-		'work_description' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
 		'show_button' => 'Show me the job openings',
 		'show_button_url' => '#',
 
-	),$atts);
+	),$atts); 
 	extract($team_member);
-
+	
 	ob_start();
-
+	
 ?>
 	<!--=======================================================================================
 									Start team area
@@ -24,7 +23,7 @@ function team_member($atts,$content){
 				<div class="col-xl-10 offset-xl-1">
 					<div class="team-member-item">
 						<div class="row">
-						<?php
+						<?php 
 							$team = new WP_Query(array(
 								'post_type'   => 'team',
 								'order'       => ASC,
@@ -50,34 +49,30 @@ function team_member($atts,$content){
 									<h3><?php the_title();?></h3>
 									<h4><?php echo get_post_meta(get_the_ID(),'designation',true);?></h4>
 									<p><?php echo get_post_meta(get_the_ID(),'team_desc',true);?></p>
-									<?php
-									$post_meta = get_post_meta(get_the_ID(),'read_button_url',true);
-									if ($post_meta): ?>
 									<a href="<?php echo get_post_meta(get_the_ID(),'read_button_url',true);?>"><?php echo get_post_meta(get_the_ID(),'read_button',true);?><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-									<?php endif ?>
 								</div>
 							</div>
 							<?php endwhile;?>
 							<?php wp_reset_postdata();?>
-
-
-
+							
+							
+							
 							<div class="col-md-8">
 								<div class="work-area">
 									<div class="work-content">
 										<h2><?php echo $work_title;?></h2>
-										<p><?php echo $work_description;?></p>
+										<p><?php echo $content;?></p>
 										<a href="<?php echo $show_button_url;?>"><?php echo $show_button;?></a>
 									</div>
 								</div>
 							</div>
-
-
-							<?php
+							
+							
+							<?php 
 							$team = new WP_Query(array(
 								'post_type'   => 'team',
 								'order'       => ASC,
-								'offset' => 7,
+								'offset' => 7,  
 							));
 							while($team->have_posts()) : $team->the_post();
 						?>
@@ -99,11 +94,7 @@ function team_member($atts,$content){
 									<h3><?php the_title();?></h3>
 									<h4><?php echo get_post_meta(get_the_ID(),'designation',true);?></h4>
 									<p><?php echo get_post_meta(get_the_ID(),'team_desc',true);?></p>
-									<?php
-									$post_meta = get_post_meta(get_the_ID(),'read_button_url',true);
-									if ($post_meta): ?>
 									<a href="<?php echo get_post_meta(get_the_ID(),'read_button_url',true);?>"><?php echo get_post_meta(get_the_ID(),'read_button',true);?><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-									<?php endif ?>
 								</div>
 							</div>
 							<?php endwhile;?>
@@ -117,7 +108,7 @@ function team_member($atts,$content){
 	<!--=======================================================================================
 									End team area
 	========================================================================================-->
-
+	
 	<?php
 	$output = ob_get_clean();
 	return $output;
@@ -137,7 +128,7 @@ function team_member($atts,$content){
 				array(
 					'heading'   => 'Work Description',
 					'type'      => 'textarea_html',
-					'param_name'=> 'work_description',
+					'param_name'=> 'content',
 					'value'     => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
 				),
 				array(

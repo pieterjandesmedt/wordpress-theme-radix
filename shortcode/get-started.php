@@ -7,7 +7,6 @@ function get_started($atts,$content){
 		'get_started_title' => 'Excited to get started?',
 		'chat_button' => 'Yes, i want to have a chat',
 		'chat_button_url' => '#',
-		'get_started_description' => 'Yes, but i am still curious <a href="#">how you can</a> help me precisely',
 
 	),$atts); 
 	extract($get_started);
@@ -25,7 +24,7 @@ function get_started($atts,$content){
 					<div class="exited-content">
 						<h3><?php echo $get_started_title;?></h3>
 						<a href="<?php echo $chat_button_url;?>" class="chat-button"><?php echo $chat_button;?></a>
-						<p><?php echo $get_started_description;?></p>
+						<p><?php echo $content;?></p>
 					</div>
 				</div>
 			</div>
@@ -65,8 +64,8 @@ function get_started($atts,$content){
 			),
 			array(
 				'heading'	=> 'Get Started Description',
-				'type'		=> 'textarea',
-				'param_name'=> 'get_started_description',
+				'type'		=> 'textarea_html',
+				'param_name'=> 'content',
 				'value'     => 'Yes, but i am still curious <a href="#">how you can</a> help me precisely'
 			),
 		)
