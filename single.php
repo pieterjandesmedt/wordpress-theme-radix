@@ -7,7 +7,7 @@
 						while(have_posts()) : the_post();
 					?>
 					<div class="author_area">
-						<p><i class="fa fa-user" aria-hidden="true"></i><a href="#"><?php the_author();?></a></p>
+						<p><i class="fa fa-user" aria-hidden="true"></i><a href="#"><?php echo get_post_meta(get_the_ID(),'author_name',true)?></a></p>
 						<p><i class="fa fa-calendar" aria-hidden="true"></i><?php echo get_the_date();?></p>
 					</div>
 					<div class="single_item">
