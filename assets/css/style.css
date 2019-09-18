@@ -55,7 +55,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
 	font-weight: 700;
 	text-transform:uppercase;
 	text-decoration:none;
-	font-family: 'Roboto', sans-serif;
 }
 .header-area .row {
 	-webkit-box-align: center;
@@ -75,7 +74,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
 	text-transform: uppercase;
 	border-radius: 5px;
 	margin-top: ;
-	font-family: 'Roboto', sans-serif;
 	align-items:center;
 	transition:0.5s;
 }
@@ -118,7 +116,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
 	text-transform: uppercase;
 	border-radius: 5px;
 	margin-top: 36px;
-	font-family: 'Roboto', sans-serif;
 	transition:0.5s;
 }
 .banner-content a:hover {
@@ -182,7 +179,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
 }
 .top-fixed .menu_button a {
 	background: #FFF;
@@ -206,13 +202,13 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         -webkit-transform: translateY(-100%);
                 transform: translateY(-100%);
-    } 
+    }
     100% {
         opacity: 0.9;
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
         -webkit-transform: translateY(0);
                 transform: translateY(0);
-    } 
+    }
 }
 @keyframes slide-down {
     0% {
@@ -220,13 +216,13 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         -webkit-transform: translateY(-100%);
                 transform: translateY(-100%);
-    } 
+    }
     100% {
         opacity: 0.9;
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
         -webkit-transform: translateY(0);
                 transform: translateY(0);
-    } 
+    }
 }
 .arrow_down {
 	width: 67px;
@@ -285,21 +281,18 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
 	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	padding-bottom: 13px;
 }
 .content_culture {
 	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	padding-bottom: 13px;
 }
 .culture-content ul li {
 	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	padding-bottom: 6px;
 }
 .culture-content ul li span {
@@ -313,7 +306,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
 	display: inline-block;
 	text-decoration: none;
 	color: #06F;
-	font-family: 'Roboto', sans-serif;
 	border-bottom: 2px solid #FF8B7C;
 }
 .culture-content i {
@@ -369,7 +361,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #FFF;
-	font-family: 'Roboto', sans-serif;
 }
 
 /* Magnific Popup CSS */
@@ -385,7 +376,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li,a{
   opacity: 0.8;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
-  z-index:99999; 
+  z-index:99999;
 }
 
 .mfp-wrap {
@@ -517,7 +508,7 @@ button::-moz-focus-inner {
   color: white;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace; 
+  font-family: Arial, Baskerville, monospace;
   }
   .mfp-close:hover, .mfp-close:focus {
     opacity: 1;
@@ -726,7 +717,6 @@ img.mfp-img {
 }
 .icon-content p {
 	font-size: 14px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 }
 .business-icon-item {
@@ -795,14 +785,12 @@ a.read-more {
 	text-transform: capitalize;
 	border-radius: 3px;
 	font-size: 13px;
-	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 }
 
 .blog-content p {
 	color: #13136D;
 	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	padding-bottom: 20px;
 	-webkit-transition:0.5s;
@@ -811,7 +799,6 @@ a.read-more {
 .blog-content span {
 	color: #A3A3A3;
 	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	display:block;
 }
@@ -837,7 +824,6 @@ a.read-more {
 	display: inline-block;
 	text-decoration: none;
 	color: #06F;
-	font-family: 'Roboto', sans-serif;
 	border-bottom: 2px solid #FF8B7C;
 }
 .blog-button i {
@@ -861,7 +847,6 @@ a.read-more {
 }
 .author_area p {
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
 	margin-right: 20px;
 	color:#000000;
 }
@@ -877,7 +862,6 @@ a.read-more {
 	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	padding-bottom: 13px;
 }
 .single_item img {
@@ -900,7 +884,6 @@ a.read-more {
 }
 .footer-left-area p {
 	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFF;
 	font-weight: 700;
 	padding: 24px 0 16px 0;
@@ -921,7 +904,6 @@ a.read-more {
 	padding: 12px 30px 12px 15px;
 	border: none;
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
 }
 .submit-area button {
 	position: absolute;
@@ -943,7 +925,6 @@ a.read-more {
 .footer-top-area .footer-menu ul li a {
 	color: #FFF;
 	font-size: 14px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -959,7 +940,6 @@ a.read-more {
 .copyright-area p {
 	font-size: 16px;
 	color: #FFF;
-	font-family: 'Roboto', sans-serif;
 }
 .tearms-area ul {
 	display: -webkit-box;
@@ -971,7 +951,6 @@ a.read-more {
 }
 .tearms-area ul li a {
 	color: #FFF;
-	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	margin-left: 30px;
 	text-decoration: none;
@@ -985,7 +964,7 @@ a.read-more {
 /*****************************************************************
 							team page
  ****************************************************************/
- 
+
 /******************************************** start home bar area **********************************/
 .homebar-area {
 	overflow: hidden;
@@ -996,7 +975,6 @@ a.read-more {
 }
 .homebar-content a {
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
 	color: #A6A6A6;
 	padding-right: ;
 	margin-right: 10px;
@@ -1034,7 +1012,6 @@ a.read-more {
 }
 .team-single-item h3 {
 	font-size: 17px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	color: #000;
 	padding-top: 20px;
@@ -1042,7 +1019,6 @@ a.read-more {
 }
 .team-single-item h4 {
 	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	color: #000;
 	padding-bottom: 6px;
@@ -1050,7 +1026,6 @@ a.read-more {
 }
 .team-single-item p {
 	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	color: #000;
 	padding-top: 10px;
@@ -1064,7 +1039,6 @@ a.read-more {
 	display: inline-block;
 	text-decoration: none;
 	color: #06F;
-	font-family: 'Roboto', sans-serif;
 	border-bottom: 2px solid #FF8B7C;
 }
 .team-single-item i {
@@ -1108,7 +1082,6 @@ a.read-more {
 	margin-bottom: 10px;
 	line-height: 0;
 	display: block;
-	font-family: 'Roboto', sans-serif;
 }
 .overlay_content ul li a i {
 	font-size: 20px;
@@ -1134,7 +1107,6 @@ a.read-more {
 }
 .work-content p {
 	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	color: #000;
 	padding-bottom: 6px;
@@ -1151,7 +1123,6 @@ a.read-more {
 	text-transform: uppercase;
 	border-radius: 5px;
 	margin-top: ;
-	font-family: 'Roboto', sans-serif;
 	align-items: center;
 	transition: 0.5s;
 	margin-top: 30px;
@@ -1166,7 +1137,7 @@ a.read-more {
 /*****************************************************************
 							cases page
  ****************************************************************/
- 
+
 /******************************************** start ai deliver area **************************************/
 .ai-delivered-area {
 	overflow: hidden;
@@ -1192,7 +1163,6 @@ a.read-more {
 }
 .ai-delivered-content ul li a {
 	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	margin-right: 20px;
 	padding: 13px 35px;
@@ -1254,7 +1224,6 @@ a.read-more {
 .cases-content span {
 	color: #FF8B7C;
 	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
 	padding-bottom: 20px;
 	display:block;
 }
@@ -1296,7 +1265,6 @@ a.read-more {
 	text-transform: uppercase;
 	border-radius: 5px;
 	margin-top: ;
-	font-family: 'Roboto', sans-serif;
 	align-items: center;
 	transition: 0.5s;
 	text-decoration: none;
@@ -1309,7 +1277,6 @@ a.read-more {
 }
 .exited-content p {
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
 	padding-top: 15px;
 }
 .exited-content p a {
@@ -1346,7 +1313,6 @@ a.read-more {
 .why-ai-content p {
 	font-size: 15px;
 	color: #4B4B4B;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	padding-bottom: 20px;
 }
@@ -1375,7 +1341,6 @@ a.read-more {
 }
 .overview-area h2 {
 	font-size: 24px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	color: #13136D;
 	padding-bottom: 30px;
@@ -1383,7 +1348,6 @@ a.read-more {
 .overview-area ul li a {
 	font-size: 15px;
 	color: #06F;
-	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 	display: flex;
 	padding-bottom: 14px;
@@ -1412,7 +1376,6 @@ a.read-more {
 	font-size: 15px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	padding-top: 24px;
 }
 .artificial-area {
@@ -1456,7 +1419,6 @@ a.read-more {
 	font-size: 15px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	padding-bottom: 13px;
 }
 /******************************************** end why ai area **********************************************/
@@ -1485,7 +1447,7 @@ a.read-more {
 	overflow: hidden;
 	font-weight: 700;
 }
-.aicontent-img-area {/* 
+.aicontent-img-area {/*
 	overflow: hidden; */
 	background: #FFEEEB;
 	padding-top: 80px;
@@ -1494,7 +1456,6 @@ a.read-more {
 	font-size: 15px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	padding-bottom: 13px;
 	padding-bottom:30px;
 }
@@ -1539,7 +1500,6 @@ a.read-more {
 	font-size: 15px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	padding-top: ;
 }
 .tech-icons-area ul li {
@@ -1567,7 +1527,6 @@ a.read-more {
 	font-size: 16px;
 	font-weight: 900;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
 	position:relative;
 	margin-left:-20px;
 	margin-top:10px;
@@ -1598,7 +1557,6 @@ a.read-more {
 	text-transform: uppercase;
 	border-radius: 5px;
 	margin-top: 25px;
-	font-family: 'Roboto', sans-serif;
 	transition: 0.5s;
 	border: none;
 }
@@ -1651,20 +1609,17 @@ a.read-more {
 }
 .address-single-area h3 {
 	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
 	color: #0066FF;
 	font-weight: 700;
 	height: 30px;
 }
 .address-single-area ul li {
 	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	font-weight: 400;
 }
 .address-single-area ul li a {
 	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	font-weight: 400;
 	text-decoration:none;
@@ -1703,7 +1658,6 @@ a.read-more {
 	padding-bottom: 6px;
 	font-size: 15px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
 }
 .input-area input::placeholder{
 	color:#000000;
@@ -1720,7 +1674,6 @@ a.read-more {
 	padding-bottom: 6px;
 	font-size: 15px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
 }
 .message-area textarea::placeholder{
 	color:#000000;
@@ -1734,7 +1687,6 @@ a.read-more {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;
 	transition: 0.5s;
 	width: 100%;
 	border: 0;
@@ -1768,13 +1720,11 @@ a.read-more {
 	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 }
 .events-content a {
 	font-size: 16px;
 	color: #06F;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 	padding-bottom: 3px;
 	border-bottom: 1px solid #FF8B7C;
@@ -1783,7 +1733,6 @@ a.read-more {
 	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 }
 .evets-single-item {
 	padding-bottom: 15px;
@@ -1813,7 +1762,6 @@ a.read-more {
 }
 .tabs-item ul li a {
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	padding: 10px 22px;
 	display: block;
@@ -1844,7 +1792,6 @@ a.read-more {
 	font-size: 15px;
 	color: #000000;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 	padding-bottom: 3px;
 	margin-top:7px;
