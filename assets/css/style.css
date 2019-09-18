@@ -941,14 +941,6 @@ a.read-more {
 	font-size: 16px;
 	color: #FFF;
 }
-.tearms-area ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
-}
 .tearms-area ul li a {
 	color: #FFF;
 	font-size: 16px;
