@@ -11,7 +11,7 @@
 						<p><i class="fa fa-calendar" aria-hidden="true"></i><?php echo get_the_date();?></p>
 					</div>
 					<div class="single_item">
-						<h3><?php the_title();?></h3>
+						<h2><?php the_title();?></h2>
 						<p><?php the_content();?></p>
 					</div>
 					<?php endwhile;?>
